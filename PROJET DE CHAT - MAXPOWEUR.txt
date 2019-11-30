@@ -1,0 +1,17 @@
+PROJET DE CHAT
+
+1- Mettre à plat les idées de design sur papier
+
+2- Intégration HTML/CSS
+
+3- Faire le chat en JS (afficher un message en appuyant sur envoyer, faire afficher un message toutes les X secondes)
+
+4- Transformer JS en JQuery
+
+5- Ajouter des fonctionnalités (liste utilisateurs sur le coté, liste des salons de l'autre, créer une page de connexion)
+
+6- localStorage pour données persistantes
+
+7- se connecter à une API (fetch) pour afficher des messages
+
+8- Connecter le projet à du back et une bdd

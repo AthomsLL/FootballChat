@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+::after {
+  content: "";
+  display: table;
+  clear: both; }

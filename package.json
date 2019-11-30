@@ -1,0 +1,14 @@
+{
+  "name": "footballchat",
+  "version": "1.0.0",
+  "description": "Chat pour les passionés de football",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Athoms",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
