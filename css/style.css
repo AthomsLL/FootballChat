@@ -11,6 +11,59 @@ html {
 body {
   box-sizing: border-box; }
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.heading-primary {
+  color: #28b485;
+  font-size: 5rem; }
+
+.btn:link, .btn:visited {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  transition: all .2s;
+  /* Permet de faire une transition entre toutes les animations du bouton. */ }
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--green {
+  background-color: #28b485;
+  color: #fff;
+  margin-left: -2px;
+  transform: translateY(-4px); }
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .login input {
+    border: none;
+    color: #000;
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    padding: 1.3rem 2rem;
+    width: 30rem;
+    height: 5.5rem; }
+    .login input::placeholder {
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem; }
+    .login input:focus {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      outline: none; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -19,3 +72,27 @@ body {
   content: "";
   display: table;
   clear: both; }
+
+[class^="col-"] {
+  float: left; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 4rem; }
+
+.col-1-of-5 {
+  width: calc((100% - 4 * 4rem) / 5);
+  border: 1px solid #000; }
+
+.col-3-of-5 {
+  width: calc(3 * ((100% - 4 * 4rem) / 5) + (2 * 4rem));
+  border: 1px solid #000; }
+
+.container {
+  background-image: url("../img/terrain_foot.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 0;
+  text-align: center; }
+
+.section__login {
+  position: relative;
+  height: 80vh; }

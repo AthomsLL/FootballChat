@@ -1,0 +1,24 @@
+.login {
+    @include absCenter;
+
+    input {
+        border: none;
+        color: $color-black;
+        display: inline-block;
+        font-family: 'Lobster', cursive;
+        font-size: 2.5rem;
+        padding: 1.3rem 2rem;
+        width: 30rem;
+        height: 5.5rem;
+
+        &::placeholder {
+            font-family: 'Lato', sans-serif;
+            font-size: 2rem;
+        }
+
+        &:focus {
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+            outline: none;
+        }
+    }
+}

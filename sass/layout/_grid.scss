@@ -3,4 +3,22 @@
     margin: 0 auto;
 }
 
-@include clearfix; 
+@include clearfix;
+
+[class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+}
+
+.col-1-of-5 {
+    width: calc((100% - 4 * #{$gutter-horizontal}) / 5);
+    border: 1px solid $color-black;
+}
+
+.col-3-of-5 {
+    width: calc(3 * ((100% - 4 * #{$gutter-horizontal}) / 5) + (2 * #{$gutter-horizontal}));
+    border: 1px solid $color-black;
+}
