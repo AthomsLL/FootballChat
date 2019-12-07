@@ -1,0 +1,7 @@
+.tchat--users {
+    padding: 2rem;
+
+    .user-category:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}

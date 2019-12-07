@@ -1,0 +1,7 @@
+.tchat--salons {
+    padding: 2rem;
+
+    .salon-category:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
