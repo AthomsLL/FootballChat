@@ -1,3 +1,37 @@
 .tchat--messages {
-    
+    background-color: rgba($color-grey-dark-2, .7);
+    border-radius: 2rem;
+    min-height: 100%;
+    padding: 1.5rem 2rem;
+
+    .messages-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .logged {
+        padding-left: 5px;
+    }
+
+    .message {
+        background-color: $color-grey-dark-3;
+        border: none;
+        border-radius: .7rem;
+        color: $color-white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 3px;
+        outline: none;
+        padding: .5rem 1rem;
+        resize: none;
+        width: 100%;
+
+        &::placeholder {
+            opacity: 1;
+            transition: opacity .3s;
+        }
+
+        &:focus::placeholder {
+            opacity: 0;
+        }
+    }
 }

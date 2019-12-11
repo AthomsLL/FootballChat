@@ -1,7 +1,24 @@
 .tchat--salons {
+    background-color: rgba($color-grey-dark-2, .7);
+    border-radius: 2rem;
     padding: 2rem;
 
     .salon-category:not(:last-child) {
         margin-bottom: 1.5rem;
+    }
+
+    ul {
+
+        li {
+            list-style-type: none;
+            
+            a { 
+                &:link, 
+                &:visited {
+                    text-decoration: none;
+                    color: $color-white;
+                }
+            }
+        }
     }
 }

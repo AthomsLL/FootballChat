@@ -88,18 +88,69 @@ body {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       outline: none; }
 
+.tchat--messages {
+  background-color: rgba(153, 153, 153, 0.7);
+  border-radius: 2rem;
+  min-height: 100%;
+  padding: 1.5rem 2rem; }
+  .tchat--messages .messages-container {
+    margin-bottom: 1.5rem; }
+  .tchat--messages .logged {
+    padding-left: 5px; }
+  .tchat--messages .message {
+    background-color: #333;
+    border: none;
+    border-radius: .7rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 3px;
+    outline: none;
+    padding: .5rem 1rem;
+    resize: none;
+    width: 100%; }
+    .tchat--messages .message::placeholder {
+      opacity: 1;
+      transition: opacity .3s; }
+    .tchat--messages .message:focus::placeholder {
+      opacity: 0; }
+
 .tchat--salons {
+  background-color: rgba(153, 153, 153, 0.7);
+  border-radius: 2rem;
   padding: 2rem; }
   .tchat--salons .salon-category:not(:last-child) {
     margin-bottom: 1.5rem; }
+  .tchat--salons ul li {
+    list-style-type: none; }
+    .tchat--salons ul li a:link, .tchat--salons ul li a:visited {
+      text-decoration: none;
+      color: #fff; }
 
 .tchat--users {
+  background-color: rgba(153, 153, 153, 0.7);
+  border-radius: 2rem;
   padding: 2rem; }
   .tchat--users .user-category:not(:last-child) {
     margin-bottom: 1.5rem; }
+  .tchat--users ul li {
+    list-style-type: none; }
+    .tchat--users ul li::before {
+      content: "";
+      display: inline-block;
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-right: 5px;
+      transform: translateY(1px);
+      border: solid 1px rgba(0, 0, 0, 0.5);
+      border-radius: 50%; }
+  .tchat--users ul .online::before {
+    background-color: #55c57a; }
+  .tchat--users ul .offline::before {
+    background-color: #d02b2b; }
 
 .row {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto; }
 
 ::after {
@@ -121,11 +172,20 @@ body {
   border: 1px solid #000; }
 
 .container {
-  background-image: url("../img/terrain_foot.jpg");
-  background-size: cover;
+  background: url("../img/terrain_foot.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   min-height: 100vh;
   padding: 2rem 0; }
 
 .section__login {
   position: relative;
-  height: 80vh; }
+  height: 85vh; }
+
+.section__tchat {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 125rem; }

@@ -1,16 +1,22 @@
 .container {
-    background-image: url("../img/terrain_foot.jpg");
-    background-size: cover;
+    background: url("../img/terrain_foot.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     min-height: 100vh;
     padding: 2rem 0;
 }
 
 .section__login {
     position: relative;
-    height: 80vh;
+    height: 85vh;
 }
 
 .section__tchat {
-
+    background-color: rgba($color-black, .6);
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 125rem;
 }
 
